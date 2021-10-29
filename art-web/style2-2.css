@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/andrey-zvyagintsev-bDkj9Olhnq4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 40px 120px;
+}
+
+.nav-logo {
+    width: 30rem;
+}
+
+.nav-logo h1 {
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    flex: 1;
+}
+
+.nav-links ul {
+    margin-left: 50px;
+    display: inline;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 25px;
+    
+}
+
+.nav-links ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 0;
+    background: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.nav-links .btn {
+    float: right;
+}
+
+.banner-title {
+    margin: 170px  130px;
+    color: #fff;
+
+}
+
+.banner-title h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
+}
+
+.banner-title h1 span {
+    color: yellow;
+}
+
+.vertical-bar {
+    height: 100%;
+    background: #000;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.search-icon {
+    height: 60%;
+    width: 80px;
+}
+
+.search-icon .fas {
+    margin: 45px 23px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-icon {
+    height: 35%;
+    width: 80px;
+    background: yellow;
+    text-align: center;
+    padding-top: 27%;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+.social-icon .fab {
+    margin: 15px 23px;
+    display: block;
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.notifications {
+    display: flex;
+    width: 400px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background: yellow;
+    align-items: center;
+}
+
+.contents {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+.notification-img {
+    flex-basis: 50%;
+    
+}
+
+.notification-img img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.click-here-link {
+    text-transform: uppercase;
+    
+}
+
+.click-here {
+    padding-top: 15px;
+    
+}
+
+.contents a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    
+}
+
+@media (max-width: 700px) {
+    .vertical-bar {
+        display: none;
+    }
+
+    .banner-title {
+        margin: 80px 40px;
+    }
+
+    .banner-title h1 {
+        font-size: 50px;
+    }
+}
+
+/* ------------------ gallery ------------------------*/
+
+.gallery-container {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/jean-baptiste-d-KVrQtT-KNlw-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+
+
+
+/* ------------------ contact ------------------------*/
+
+.contact-container {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(images/clark-tibbs-oqStl2L5oxI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.contact-section {
+    padding: 6rem 30rem 10rem 30rem;
+    width: 50%;
+    height: 5rem;
+    
+}
+
+.contact-section h1 {
+    text-align: center;
+    color: #ddd;
+    font-size: 4rem;
+}
+
+.border {
+    width: 200px;
+    height: 10px;
+    background: #ddd;
+    margin: 40px auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0px;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus {
+    box-shadow: 0 0 10px 4px #34495e;
+}
+
+textarea  {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn {
+    float: right;
+    border: 0;
+    background: #ddd;
+    color: #34495e;
+    padding: 12px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-form-btn:hover {
+    background: #2980b9;
+}
+
+
+
+/* ------------------ Gallery ------------------------*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    margin-left: 25%;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
